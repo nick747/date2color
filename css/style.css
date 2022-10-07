@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#appbar {
+    height: 40px;
+    background-color: #FFCA41;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+}
+
+.app {
+    padding: 30px;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.input {
+    text-align: right;
+    width: 200px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: inherit;
+    color: black;
+    outline: none;
+    padding: 1.25rem;
+    background: none;
+    margin: 20px;
+}
+
+.input:hover{
+    border: 2px solid #FFCA41;
+}
+
+.button {
+    display: inline;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: #FFCA41;
+    border-radius: 0.5rem;
+    padding: 16px 8px;
+    font-size: 16px;
+    border-bottom: 4px solid #e8b73c;
+    font-weight: 700;
+    color: white;
+    line-height: 26px;
+}
+
+#hex{
+    text-align: center;
+    width: 600px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: inherit;
+    color: black;
+    outline: none;
+    padding: 1.25rem;
+    background: none;
+    margin: 20px;
+}
