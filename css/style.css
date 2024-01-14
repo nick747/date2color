@@ -69,7 +69,11 @@
     line-height: 26px;
 }
 
-#hex{
+#hex-container {
+    position: relative;
+}
+
+#hex {
     text-align: center;
     width: 600px;
     height: 25px;
@@ -83,3 +87,15 @@
     background: none;
     margin: 20px;
 }
+
+#error-message {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+}
+
