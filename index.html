@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    
     <link rel="icon" type="image/x-icon" href="/images/date.ico">
 
     <title>Date2Color</title>
@@ -26,13 +27,16 @@
       </div>
       <br />
       <div class="center">
-        <input class="input" type="text" v-model="day" @keyup="azione" placeholder="GG"/>
-        <input class="input" type="text" v-model="month" @keyup="azione" placeholder="MM" />
-        <input class="input" type="text" v-model="year" @keyup="azione" placeholder="AA" />
+        <input class="input" type="text" v-model="day" @input="validateDate" placeholder="GG"/>
+        <input class="input" type="text" v-model="month" @input="validateDate" placeholder="MM" />
+        <input class="input" type="text" v-model="year" @input="validateDate" placeholder="AA" />
       </div>
-      <div class="center">
-        <h3 id="hex">{{colore}}</h3>
-      </div>
+      <div class="center" style="margin-top: 10px;">
+        <div id="hex-container">
+            <h3 id="hex">{{colore}}</h3>
+            <p v-if="error" id="error-message">Formato della data non valido</p>
+        </div>
+    </div>
     </div>
 
     <script src="js/main.js"></script>
